@@ -31,11 +31,55 @@ questions ([
         message: 'What did you learn?',
         name: 'description 4',
     },
- 
+    {
+        type: 'input',
+        message: 'How do you install your project? Provide step-by-step instructions.',
+        name: 'installation'
+    },
+    {
+        type: 'input',
+        message: 'How do you use your project? Provide screenshots if needed.',
+        name: 'usage'
+    },
+    {
+        type: 'input',
+        message: 'Who were your collaborators? Please link their GitHub profiles',
+        name: 'credits'
+    },
+    {
+        type: 'input',
+        message: 'Please provide a license.',
+        name: 'credits'
+    },
+
 ]);
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    console.log(fileName, data);
+    const html = `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!-- Minified version -->
+         <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <title>Professional Readme Generator</title>
+    </head>
+    <body>
+        <header>
+            <h1>${data.title}</h1>
+        </header>
+        <section>
+            <article>
+                <p>
+                ${data.description1}
+                </p>
+            </article>
+        </section>    
+    </body>
+    </html>`
+}
 
 // TODO: Create a function to initialize app
 function init() {}
