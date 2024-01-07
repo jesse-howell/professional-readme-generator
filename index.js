@@ -14,7 +14,7 @@ questions ([
     {
         type: 'input',
         message: 'What was your motivation?',
-        name: 'description 1',
+        name: 'description_1',
     },
     {
         type: 'input',
@@ -73,6 +73,12 @@ function writeToFile(fileName, data) {
         <section>
             <article>
                 <p>
+                ${data.description_1}
+                ${data.description 2}
+                ${data.description3}
+                ${data.description4}
+                ${data.description5}
+                ${data.description1}
                 ${data.description1}
                 </p>
             </article>
