@@ -74,12 +74,12 @@ function writeToFile(fileName, data) {
             <article>
                 <p>
                 ${data.description_1}
-                ${data.description 2}
-                ${data.description3}
-                ${data.description4}
-                ${data.description5}
-                ${data.description1}
-                ${data.description1}
+                ${data.description_2}
+                ${data.description_3}
+                ${data.description_4}
+                ${data.description_5}
+                ${data.description_6}
+                ${data.description_7}
                 </p>
             </article>
         </section>    
