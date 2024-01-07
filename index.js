@@ -8,10 +8,30 @@ const questions = inquirer.createPromptModule();
 questions ([
     {
         type: 'input',
-        message: 'Please enter your project name.',
-        name: 'name',
-        default: 'Your-Project-Title'
+        message: 'What is the title of your project?',
+        name: 'title',
     },
+    {
+        type: 'input',
+        message: 'What was your motivation?',
+        name: 'description 1',
+    },
+    {
+        type: 'input',
+        message: 'Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")',
+        name: 'description 2',
+    },
+    {
+        type: 'input',
+        message: 'What problem does it solve?',
+        name: 'description 3',
+    },
+    {
+        type: 'input',
+        message: 'What did you learn?',
+        name: 'description 4',
+    },
+ 
 ]);
 
 // TODO: Create a function to write README file
