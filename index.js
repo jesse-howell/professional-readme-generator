@@ -16,41 +16,41 @@ questions ([
         message: 'What was your motivation?',
         name: 'description_1',
     },
-    // {
-    //     type: 'input',
-    //     message: 'Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")',
-    //     name: 'description_2',
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'What problem does it solve?',
-    //     name: 'description_3',
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'What did you learn?',
-    //     name: 'description_4',
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'How do you install your project? Provide step-by-step instructions.',
-    //     name: 'installation'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'How do you use your project? Provide screenshots if needed.',
-    //     name: 'usage'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'Who were your collaborators? Please link their GitHub profiles',
-    //     name: 'credits'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'Please provide a license.',
-    //     name: 'credits'
-    // },
+    {
+        type: 'input',
+        message: 'Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")',
+        name: 'description_2',
+    },
+    {
+        type: 'input',
+        message: 'What problem does it solve?',
+        name: 'description_3',
+    },
+    {
+        type: 'input',
+        message: 'What did you learn?',
+        name: 'description_4',
+    },
+    {
+        type: 'input',
+        message: 'How do you install your project? Provide step-by-step instructions.',
+        name: 'installation'
+    },
+    {
+        type: 'input',
+        message: 'How do you use your project? Provide screenshots if needed.',
+        name: 'usage'
+    },
+    {
+        type: 'input',
+        message: 'Who were your collaborators? Please link their GitHub profiles',
+        name: 'credits'
+    },
+    {
+        type: 'input',
+        message: 'Please provide a license.',
+        name: 'license'
+    },
 
 ])
 
@@ -68,7 +68,7 @@ questions ([
     </head>
     <body>
         <header>
-            <h1>readme</h1>
+            <h1>${data.title}</h1>
         </header>
         <section>
             <article>
@@ -77,13 +77,13 @@ questions ([
                     Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
                     <ul>
                         <li>What was your motivation?</li>
-                        <p></p>
+                        <p>${data.description_1}</p>
                         <li>Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")</li>
-                        <p></p>
+                        <p>${data.description_2}</p>
                         <li>What problem does it solve?</li>
-                        <p></p>
+                        <p>${data.description_3}</p>
                         <li>What did you learn?</li>
-                        <p></p>
+                        <p>${data.description_4}</p>
                     </ul>
                 </p>
                 <h2>Table of Contents (Optional)</h2>
@@ -99,7 +99,7 @@ questions ([
                 <h2>Installation</h2>
                 <p>
                     What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-                    <p></p>
+                    <p>${data.installation}</p>
                 </p>
                 <h2>Usage</h2>
                 <p>
