@@ -13,46 +13,35 @@ questions ([
     },
     {
         type: 'input',
-        message: 'What was your motivation?',
-        name: 'description_1',
-    },
-    {
-        type: 'input',
-        message: 'Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")',
-        name: 'description_2',
-    },
-    {
-        type: 'input',
-        message: 'What problem does it solve?',
-        name: 'description_3',
-    },
-    {
-        type: 'input',
-        message: 'What did you learn?',
-        name: 'description_4',
-    },
-    {
-        type: 'input',
-        message: 'How do you install your project? Provide step-by-step instructions.',
-        name: 'installation'
-    },
-    {
-        type: 'input',
-        message: 'How do you use your project? Provide screenshots if needed.',
-        name: 'usage'
-    },
-    {
-        type: 'input',
-        message: 'Who were your collaborators? Please link their GitHub profiles',
-        name: 'credits'
-    },
-    {
-        type: 'input',
-        message: 'Please provide a license.',
-        name: 'license'
-    },
+        message: 'Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide',
 
-])
+        '- What was your motivation?':
+        '- Why did you build this project?',
+        '- What problem does it solve?':
+        '- What did you learn?',
+        name: 'description',
+    },
+    // {
+//         type: 'input',
+//         message: 'How do you install your project? Provide step-by-step instructions.',
+//         name: 'installation'
+//     },
+//     {
+//         type: 'input',
+//         message: 'How do you use your project? Provide screenshots if needed.',
+//         name: 'usage'
+//     },
+//     {
+//         type: 'input',
+//         message: 'Who were your collaborators? Please link their GitHub profiles',
+//         name: 'credits'
+//     },
+//     {
+//         type: 'input',
+//         message: 'Please provide a license.',
+//         name: 'license'
+//     },
+
 
 // TODO: Create a function to write README file
 .then((data) => {
