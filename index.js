@@ -14,7 +14,7 @@ questions ([
     },
     {
         type: 'input',
-        message: 'Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:', 
+        message: 'Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide: (press enter to continue)', 
         name: 'description_1',
     },
     {    
@@ -49,8 +49,13 @@ questions ([
     },  
     {
         type: 'input',
-        message: 'To add a screenshot, create an <code>assets/images</code> folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax: <code>assets/images/screenshot.png</code>',
-        name: 'usage_2'
+        message: 'To add a screenshot, create an <code>assets/images</code> folder in your repository and upload your screenshot to it. (press enter to continue)',
+        name: 'usage_2',
+    },
+    {
+        type: 'input',
+        message: 'Then, using the relative file path, add it to your README using the following syntax: <code>assets/images/screenshot.png</code>',
+        name: 'usage_3'
     },
     // {
     //     type: 'input',
@@ -85,7 +90,7 @@ questions ([
                 <h2>Description</h2>
                 <p>
                     Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-                    <p>${pressAnyKey(),data.description_1}</p>
+                    ${pressAnyKey(),data.description_1}
                     <ul>
                         <li>What was your motivation?</li>
                         <p>${data.description_2}</p>
@@ -117,11 +122,14 @@ questions ([
                     Provide instructions and examples for use. Include screenshots as needed.
                     <p>${data.usage_1}</p>
                     <br>
+                    To add a screenshot, create an <code>/assets/images</code> folder in your repository and upload your screenshot to it. <span>${pressAnyKey(),data.usage_2}</span> Then, using the relative file path, add it to your README using the following syntax:
+                    <code>/assets/images/screenshot.png</code>
                     <br>
-                    To add a screenshot, create an <code>assets/images</code> folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-                    <code>assets/images/screenshot.png</code><p><img src="${data.usage_2}"></p>
+                    <img src="${data.usage_3}" alt="Readme generator screenshot">
                     <br>
                     <br>
+                    <br>
+                    
                 </p>  
                 <h2>Credits</h2>
                 <p>
