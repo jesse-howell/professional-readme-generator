@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
-
+const pressAnyKey = require('press-any-key');
+// console.log('Press any key to continue...');
 // TODO: Create an array of questions for user input
 const questions = inquirer.createPromptModule();
 
@@ -13,35 +14,51 @@ questions ([
     },
     {
         type: 'input',
-        message: 'Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide',
-
-        '- What was your motivation?':
-        '- Why did you build this project?',
-        '- What problem does it solve?':
-        '- What did you learn?',
-        name: 'description',
+        message: 'Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:', 
+        name: 'description_1',
     },
-    // {
-//         type: 'input',
-//         message: 'How do you install your project? Provide step-by-step instructions.',
-//         name: 'installation'
-//     },
-//     {
-//         type: 'input',
-//         message: 'How do you use your project? Provide screenshots if needed.',
-//         name: 'usage'
-//     },
-//     {
-//         type: 'input',
-//         message: 'Who were your collaborators? Please link their GitHub profiles',
-//         name: 'credits'
-//     },
-//     {
-//         type: 'input',
-//         message: 'Please provide a license.',
-//         name: 'license'
-//     },
+    {    
+        type: 'input',
+        message: '- What was your motivation?',
+        name: 'description_2',    
+    },
+    {    
+        type: 'input',
+        message: '- Why did you build this project?',
+        name: 'description_3',
+    },    
+    {
+        type: 'input',
+        message: '- What problem does it solve?',
+        name: 'description_4',
+    },
+    {
+        type: 'input',
+        message: '- What did you learn?', 
+        name: 'description_5',
+    },    
 
+    // {
+    //     type: 'input',
+    //     message: 'How do you install your project? Provide step-by-step instructions.',
+    //     name: 'installation'
+    // },
+    // {
+    //     type: 'input',
+    //     message: 'How do you use your project? Provide screenshots if needed.',
+    //     name: 'usage'
+    // },
+    // {
+    //     type: 'input',
+    //     message: 'Who were your collaborators? Please link their GitHub profiles',
+    //     name: 'credits'
+    // },
+    // {
+    //     type: 'input',
+    //     message: 'Please provide a license.',
+    //     name: 'license'
+    // },
+])
 
 // TODO: Create a function to write README file
 .then((data) => {
@@ -64,15 +81,16 @@ questions ([
                 <h2>Description</h2>
                 <p>
                     Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+                    <p>${pressAnyKey(),data.description_1}</p>
                     <ul>
                         <li>What was your motivation?</li>
-                        <p>${data.description_1}</p>
-                        <li>Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")</li>
                         <p>${data.description_2}</p>
-                        <li>What problem does it solve?</li>
+                        <li>Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")</li>
                         <p>${data.description_3}</p>
-                        <li>What did you learn?</li>
+                        <li>What problem does it solve?</li>
                         <p>${data.description_4}</p>
+                        <li>What did you learn?</li>
+                        <p>${data.description_5}</p>
                     </ul>
                 </p>
                 <h2>Table of Contents (Optional)</h2>
@@ -101,6 +119,7 @@ questions ([
                     <br>
                     <br>
                     <code>assets/images/screenshot.png</code>
+                    <p>
                 </p>  
                 <h2>Credits</h2>
                 <p>
@@ -126,7 +145,6 @@ questions ([
                     <br>
                 </p> 
                 <h2>Badges</h2>
-                <p>
                     <a href="https://img.shields.io/github/languages/top/nielsenjared/badmath">img.shields.io/badmath</a>
                     <br>
                     <br>
