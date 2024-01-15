@@ -2,7 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const pressAnyKey = require('press-any-key');
-// console.log('Press any key to continue...');
+
 // TODO: Create an array of questions for user input
 const questions = inquirer.createPromptModule();
 
@@ -19,24 +19,27 @@ questions ([
     },
     {    
         type: 'input',
-        message: '- What was your motivation?',
+        message: 'What was your motivation?',
         name: 'description_2',    
     },
     {    
         type: 'input',
-        message: '- Why did you build this project?',
+        message: 'Why did you build this project?',
         name: 'description_3',
     },    
     {
         type: 'input',
-        message: '- What problem does it solve?',
+        message: 'What problem does it solve?',
         name: 'description_4',
     },
     {
         type: 'input',
-        message: '- What did you learn?', 
+        message: 'What did you learn?', 
         name: 'description_5',
-    },    
+    }, 
+    {
+      
+    }
 
     // {
     //     type: 'input',
