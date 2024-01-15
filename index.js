@@ -38,19 +38,20 @@ questions ([
         name: 'description_5',
     }, 
     {
-      
-    }
-
-    // {
-    //     type: 'input',
-    //     message: 'How do you install your project? Provide step-by-step instructions.',
-    //     name: 'installation'
-    // },
-    // {
-    //     type: 'input',
-    //     message: 'How do you use your project? Provide screenshots if needed.',
-    //     name: 'usage'
-    // },
+        type: 'input',
+        message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
+        name: 'installation'
+    },
+    {
+        type: 'input',
+        message: 'Provide instructions and examples for use. Include screenshots as needed.',
+        name: 'usage_1'
+    },  
+    {
+        type: 'input',
+        message: 'To add a screenshot, create an <code>assets/images</code> folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax: <code>assets/images/screenshot.png</code>',
+        name: 'usage_2'
+    },
     // {
     //     type: 'input',
     //     message: 'Who were your collaborators? Please link their GitHub profiles',
@@ -114,15 +115,13 @@ questions ([
                 <h2>Usage</h2>
                 <p>
                     Provide instructions and examples for use. Include screenshots as needed.
-                    <p></p>
+                    <p>${data.usage_1}</p>
                     <br>
                     <br>
                     To add a screenshot, create an <code>assets/images</code> folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-                    <img src="" alt="">
+                    <code>assets/images/screenshot.png</code><p><img src="${data.usage_2}"></p>
                     <br>
                     <br>
-                    <code>assets/images/screenshot.png</code>
-                    <p>
                 </p>  
                 <h2>Credits</h2>
                 <p>
