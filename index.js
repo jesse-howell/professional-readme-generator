@@ -57,11 +57,21 @@ questions ([
         message: 'Then, using the relative file path, add it to your README using the following syntax: <code>assets/images/screenshot.png</code>',
         name: 'usage_3'
     },
-    // {
-    //     type: 'input',
-    //     message: 'Who were your collaborators? Please link their GitHub profiles',
-    //     name: 'credits'
-    // },
+    {
+        type: 'input',
+        message: 'List your collaborators, if any, with links to their GitHub profiles.',
+        name: 'credits_1'
+    },
+    {
+        type: 'input',
+        message: 'If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.',
+        name: 'credits_2'
+    },
+    {
+        type: 'input',
+        message: 'If you followed tutorials, include links to those here as well.',
+        name: 'credits_3'
+    },
     // {
     //     type: 'input',
     //     message: 'Please provide a license.',
@@ -125,24 +135,23 @@ questions ([
                     To add a screenshot, create an <code>/assets/images</code> folder in your repository and upload your screenshot to it. <span>${pressAnyKey(),data.usage_2}</span> Then, using the relative file path, add it to your README using the following syntax:
                     <code>/assets/images/screenshot.png</code>
                     <br>
+                    <br>
+                    <br>
                     <img src="${data.usage_3}" alt="Readme generator screenshot">
                     <br>
-                    <br>
-                    <br>
-                    
                 </p>  
                 <h2>Credits</h2>
                 <p>
                     List your collaborators, if any, with links to their GitHub profiles.
-                    <p></p>
+                    <p>${data.credits_1}</p>
                     <br>
                     <br>
                     If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-                    <p></p>
+                    <p>${data.credits_2}</p>
                     <br>
                     <br>
                     If you followed tutorials, include links to those here as well.
-                    <p></p>
+                    <p>${data.credits_3}</p>
                 </p>
                 <h2>License</h2>
                 <p>
