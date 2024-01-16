@@ -217,6 +217,10 @@ questions ([
                     Go the extra mile and write tests for your application. Then provide examples on how to run them here.
                     <p></p>
                 </p>
+                <h2>Questions</h2>
+                <p>
+                    If you have any questions, message me on <a href=""></a>GitHub or send an <a href="mailto:"></a>Email.
+                </p>
             </article>
         </section>
     </body>
