@@ -55,28 +55,58 @@ questions ([
     {
         type: 'input',
         message: 'Then, using the relative file path, add it to your README using the following syntax: <code>assets/images/screenshot.png</code>',
-        name: 'usage_3'
+        name: 'usage_3',
     },
     {
         type: 'input',
         message: 'List your collaborators, if any, with links to their GitHub profiles.',
-        name: 'credits_1'
+        name: 'credits_1',
     },
     {
         type: 'input',
         message: 'If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.',
-        name: 'credits_2'
+        name: 'credits_2',
     },
     {
         type: 'input',
         message: 'If you followed tutorials, include links to those here as well.',
-        name: 'credits_3'
+        name: 'credits_3',
     },
-    // {
-    //     type: 'input',
-    //     message: 'Please provide a license.',
-    //     name: 'license'
-    // },
+    {
+        type: 'input',
+        message: 'The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project.',
+        name: 'license_1',
+    },
+    {
+        type: 'input',
+        message: 'If you need help choosing a license, refer to <a href="https://choosealicense.com/">choosealicense.com</a>. (enter license url)',
+        name: 'license_2',
+    },
+    {
+        type: 'input',
+        message: "Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing.",
+        name: 'badges_1',
+    },
+    {
+        type: 'input',
+        message: "Check out the badges hosted by <a href='https://shields.io/'>shields.io</a>. You may not understand what they all represent now, but you will in time.",
+        name: 'badges_2',
+    },    
+    {
+        type: 'input',
+        message: 'If your project has a lot of features, list them here.',
+        name: 'features',
+    },
+    {
+        type: 'input',
+        message: "If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The <a href='https://www.contributor-covenant.org/'>Contributor Covenant</a> is an industry standard, but you can always write your own if you'd prefer.",
+        name: 'features',
+    },
+    {
+        type: 'tests',
+        message: 'Go the extra mile and write tests for your application. Then provide examples on how to run them here.',
+        name: 'tests',
+    },
 ])
 
 // TODO: Create a function to write README file
