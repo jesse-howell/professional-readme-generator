@@ -1,5 +1,8 @@
 // TODO: Include packages needed for this application
-
+// added fs to write file system, inquirer for cli interaction and generateMarkdown to import the generateMarkdown.js file
+const fs = require('fs');
+const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [];
 
