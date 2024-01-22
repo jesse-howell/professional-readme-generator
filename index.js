@@ -4,7 +4,8 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
-const questions = inquirer.createPromptModule;
+// added question array to be answered in the cli
+const questions = inquirer.createPromptModule();
 
 questions ([
 {
@@ -12,7 +13,6 @@ questions ([
     message: 'What is your project title?',
     name: 'title',
 },
-
 {
     type: 'input',
     message: 'What is a description of your project? (Your motivation, why you built this, what problem this solves and what you learned.)',
@@ -61,10 +61,15 @@ questions ([
 ])
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+ 
+};
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+
+}
 
 // Function call to initialize app
 init();
