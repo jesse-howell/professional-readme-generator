@@ -5,9 +5,8 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 // added question array to be answered in the cli
-const questions = inquirer.createPromptModule();
 
-questions ([
+const questions = [
 {
     type: 'input',
     message: 'What is your project title?',
@@ -21,7 +20,7 @@ questions ([
 {
     type: 'input',
     message: 'What is your table of contents for this readme?',
-    name: 'table of contents',
+    name: 'table_of_contents',
 },
 {
     type: 'input',
@@ -58,18 +57,29 @@ questions ([
     message: 'How can you be contacted if need be?',
     name: 'questions',
 },
-])
+{
+    type: 'input',
+    message: 'What license do you need?',
+    name: 'license',
+},
+
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
- 
+fs.writeFileSync(fileName, generateMarkdown(data));
 };
 
 
 // TODO: Create a function to initialize app
 function init() {
-
+const prompt = inquirer.createPromptModule();
+prompt (questions)
+.then((data) => {
+    writeToFile('./output/README.md', data);
+    console.log(data);
+    
+} )  
 }
 
 // Function call to initialize app
