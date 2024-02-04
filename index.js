@@ -44,8 +44,8 @@ const questions = [
 },
 {
     type: 'input',
-    message: 'What badge do you need for this project?'
-    name: 'badge'
+    message: 'What badge do you need for this project?',
+    name: 'badge',
 },
 {
     type: 'input',
@@ -65,7 +65,7 @@ const questions = [
 {
     type: 'input',
     message: 'How can you be contacted if need be?',
-    name: 'questions',
+    name: 'contact',
 },
 
 
@@ -83,10 +83,9 @@ const prompt = inquirer.createPromptModule();
 prompt (questions)
 .then((data) => {
     writeToFile('./output/README.md', data);
-    console.log(data);
-    
-} )  
-}
+    console.log(data);    
+});  
+};
 
 // Function call to initialize app
 init();
