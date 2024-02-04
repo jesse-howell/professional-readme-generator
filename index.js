@@ -18,9 +18,9 @@ const questions = [
     name: 'description',
 },
 {
-    type: 'input',
+    type: 'checkbox',
     message: 'What is your table of contents for this readme?',
-    name: 'table_of_contents',
+    choices: ['Description', 'Installation', 'Usage', 'Credits', 'License', 'Features', 'Contributing', 'Tests', 'Contact'],
 },
 {
     type: 'input',
