@@ -39,6 +39,16 @@ const questions = [
 },
 {
     type: 'input',
+    message: 'What license do you need?',
+    name: 'license',
+},
+{
+    type: 'input',
+    message: 'What badge do you need for this project?'
+    name: 'badge'
+},
+{
+    type: 'input',
     message: 'Does this project have any features?',
     name: 'features',
 },
@@ -57,11 +67,7 @@ const questions = [
     message: 'How can you be contacted if need be?',
     name: 'questions',
 },
-{
-    type: 'input',
-    message: 'What license do you need?',
-    name: 'license',
-},
+
 
 ];
 
