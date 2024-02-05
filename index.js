@@ -1,11 +1,9 @@
-// TODO: Include packages needed for this application
-// added fs to write file system, inquirer for cli interaction and generateMarkdown to import the generateMarkdown.js file
+// required packages for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
-// TODO: Create an array of questions for user input
-// added question array to be answered in the cli
 
+// question array for inquirer prompt
 const questions = [
   {
     type: "input",
@@ -18,22 +16,6 @@ const questions = [
       "What is a description of your project? (Your motivation, why you built this, what problem this solves and what you learned.)",
     name: "description",
   },
-//   {
-//     type: "checkbox",
-//     message: "What is your table of contents for this readme?",
-//     name: "toc",
-//     choices: [
-//       "Description",
-//       "Installation",
-//       "Usage",
-//       "Credits",
-//       "License",
-//       "Features",
-//       "Contributing",
-//       "Tests",
-//       "Contact",
-//     ],
-//   },
   {
     type: "input",
     message: "How do you install this project? (step-by-step)",
@@ -81,13 +63,13 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
+// function writes data to README file
 function writeToFile(fileName, data) {
-  const readmeContent = generateMarkdown(data);
-  fs.writeFileSync(fileName, readmeContent);
+  const md = generateMarkdown(data);
+  fs.writeFileSync(fileName, md);
 }
 
-// TODO: Create a function to initialize app
+// function to initialize app
 function init() {
   const prompt = inquirer.createPromptModule();
   prompt(questions).then((data) => {
@@ -96,5 +78,5 @@ function init() {
   });
 }
 
-// Function call to initialize app
+// function call to initialize app
 init();

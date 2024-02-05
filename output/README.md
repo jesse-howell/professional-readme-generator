@@ -1,6 +1,6 @@
 
   
-  # jfowej
+  # 
 
   ## Description
   
@@ -10,10 +10,12 @@
 
   ## Table of Contents
 
+  - [Description](#descritpion)
   - [Installation](#installation)
   - [Usage](#usage)
   - [License](#license)
-  - [Contributing](#contributing)
+  - [Features](#features)
+  - [How to Contribute](#howtocontribute)
   - [Tests](#tests)
   - [Contact](#contact)
 
@@ -24,10 +26,6 @@
   
 
   
-## License
-
-This project is licensed under the [[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)]([License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)).
-
 
   ## Features
   
