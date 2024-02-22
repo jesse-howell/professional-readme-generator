@@ -8,14 +8,6 @@
   ## Installation
   This application can only run in a text editor like Visual Studio Code.
 
-  ## Table of Contents
-
-  - [Description](#descritpion)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [Contact for Questions](#contact)
-
   ## Usage
   
 
