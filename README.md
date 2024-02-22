@@ -12,7 +12,7 @@
   
   [![demo-video](/assets/readme-gen-youtube.jpg)](https://youtu.be/ZvP3ic7ICj0 "README generator demo video")
 
-  ![generated-readme-screenshot](/assets/generated-readme-screeshot.jpg)
+  ![generated-readme-screenshot](/assets/generated-readme-screeshot.jpg "generated README screenshot")
 
   ## Credits
   [license-badges.md](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
