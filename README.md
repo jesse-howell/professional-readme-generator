@@ -10,7 +10,7 @@
 
   ## Usage
   
-  [Demo-Video](/assets/usage/README-generator.mov)
+  [Demo-Video](https://youtu.be/ZvP3ic7ICj0)
 
   ## Credits
   [license-badges.md]()
