@@ -10,10 +10,12 @@
 
   ## Usage
   
-  [Demo-Video](https://youtu.be/ZvP3ic7ICj0)
+  [![Demo-video](/assets/readme-gen-youtube.jpg)](https://youtu.be/ZvP3ic7ICj0 "README generator demo video")
+
+
 
   ## Credits
-  [license-badges.md]()
+  [license-badges.md](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba)
 
   ## Contact for Questions
   [Github](https://www.github.com/jesse-howell)
