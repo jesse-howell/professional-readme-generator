@@ -1,44 +1,24 @@
+# pwa-text-editor
 
-  
-  # Title
+## Description
 
-  ## Description
-  Description is this.
+I built this project because I wanted to create a simple text editor for the web. I was motivated by the fact that I love text editors and I wanted to understand the process required for its creation. I learned how easy it is to spin up your own editor which explains why there are so many in the wild. Unfortunately, some people can't find the text editor of their dreams. Everybody wants a text editor to do specific things but the editor you want doesn't always exist. Customizability can get you close to what you want but not always. Sometimes, you just have to make your own to meet your specific interests and requirements.
 
-  ## Installation
-  Very carefully
+## Installation
 
-  ## Table of Contents
+Open your browser then go to the JATE website.
 
-  - [Description](#descritpion)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Features](#features)
-  - [How to Contribute](#howtocontribute)
-  - [Tests](#tests)
-  - [Contact](#contact)
+## Table of Contents
 
-  ## Usage
-  With a mouse and keyboard.
+- [Description](#descritpion)
+- [Installation](#installation)
+- [Usage](#usage)
+- [How to Contribute](#howtocontribute)
 
-  ## Credits
-  Links
+## Usage
 
-  
-## License
+You simply start typing on screen.
 
-This project is licensed under the [[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)]([License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)).
+## How to Contribute
 
-
-  ## Features
-  No
-
-  ## How to Contribute
-  [Github](https://www.github.com/jesse-howell) [Email](mailto:jessehowell.dev@tutanota.com)
-
-  ## Tests
-  No
-
-  ## Contact for Questions
-  At my Github or email provided above.
+Send me an [email](mailto:jessehowell.dev@tutanota.com)
